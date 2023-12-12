@@ -1,5 +1,5 @@
 {% set name = "pyobjc-framework-applicationservices" %}
-{% set version = "10.0" %}
+{% set version = "10.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyobjc-framework-ApplicationServices-{{ version }}.tar.gz
-  sha256: 8a667da95c09202def58746c42d5093f90be5762a52e6f5ad8beb334b51dca20
+  sha256: bb780eabadad0fbf36a128041dccfd71e30bbeb6b110852d37fd5c98f4a2ec04
 
 build:
   skip: true  # [not osx]
