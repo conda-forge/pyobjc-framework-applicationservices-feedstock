@@ -1,5 +1,5 @@
 {% set name = "pyobjc-framework-applicationservices" %}
-{% set version = "12.2.1" %}
+{% set version = "13.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 048ea663c9ac75c44a15dc7d5b8d78cbb4c97bf1c76e83835e8d5498e184001f
+  sha256: efb69395fafc2014602ffc76f942625d473e685d7f7cc2e38a800e5bcbff5169
 
 build:
   skip: true  # [not osx]
   script: {{ PYTHON }} -m pip install . -vv
-  number: 2
+  number: 0
 
 
 requirements:
